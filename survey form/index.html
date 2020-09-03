@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 class="text-center">Personality Survey Form</h1>
+                <p class="description text-center">
+                    Thank you for taking the time to take our personality form
+                </p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" class="form-control" placeholder="Enter your first name" required> 
+                </div>
+                <div class="form-group">
+                    <label id="name-label" for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" class="form-control" placeholder="Enter your last name" required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age<span class="clue">(Optional)</span></label>
+                    <input type="number" name="age" id="number" min="10" max="90" class="form-control" placeholder="Age">
+                </div>
+                <div class="form-group">
+                    <p>How long does it take you to calm down when you’ve been angry?</p>
+                    <select id="dropdown" name="calm" class="form-control" required>
+                        <option value="1" disabled selected value>Select Time</option>
+                        <option value="1">5 Minutes</option>
+                        <option value="1">10 Minutes</option>
+                        <option value="1">15 Minutes</option>
+                        <option value="1">20 Minutes</option>
+                        <option value="1">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Are you considerate of other people’s feelings?</p>
+                    <label>
+                        <input name="feeling" value="definitely" type="radio" class="input-radio" checked>Definitely
+                    </label>
+                    <label>
+                        <input name="feeling" value="maybe" type="radio" class="input-radio">Maybe
+                    </label>
+                    <label>
+                        <input name="feeling" value="not-sure" type="radio" class="input-radio">Not sure
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>How often do you go out into a social environment or a public place?</p>
+                    <select id="social" name="social-place" class="form-control" required>
+                        <option value="1" disabled selected value>
+                            Select an option
+                        </option>
+                        <option value="1">
+                            None
+                        </option>
+                        <option value="1">
+                            Once a week
+                        </option>
+                        <option value="1">
+                            Twice a week
+                        </option>
+                        <option value="1">
+                            Three times a week
+                        </option>
+                        <option value="1">
+                            Five times a week
+                        </option>
+                        <option value="1">
+                            Every day
+                        </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>
+                        What shows have you watched?<span class="clue">(Check all that apply)</span>
+                    </p>
+                    <label>
+                        <input name="prefer" value="shameless" type="checkbox" class="input-checkbox">Shameless
+                    </label>
+                    <label>
+                        <input name="prefer" value="dexter" type="checkbox" class="input-checkbox">Dexter
+                    </label>
+                    <label>
+                        <input name="prefer" value="breaking-bad" type="checkbox" class="input-checkbox">Breaking Bad
+                    </label>
+                    <label>
+                        <input name="prefer" value="you" type="checkbox" class="input-checkbox">You
+                    </label>
+                    <label>
+                        <input name="prefer" value="black-mirror" type="checkbox" class="input-checkbox">Black Mirror
+                    </label>
+                    <label>
+                        <input name="prefer" value="the-office" type="checkbox" class="input-checkbox">The Office
+                    </label>
+                    <label>
+                        <input name="prefer" value="ozark" type="checkbox" class="input-checkbox">Ozark
+                    </label>
+                    <label>
+                        <input name="prefer" value="peaky-blinders" type="checkbox" class="input-checkbox">Peaky Blinders
+                    </label>
+                    <label>
+                        <input name="prefer" value="dark" type="checkbox" class="input-checkbox">Dark
+                    </label>
+                    <label>
+                        <input name="prefer" value="space-force" type="checkbox" class="input-checkbox">Space Force
+                    </label>
+                    <label>
+                        <input name="prefer" value="dead-to-me" type="checkbox" class="input-checkbox">Dead to Me
+                    </label>
+                    <label>
+                        <input name="prefer" value="greys-anatomy" type="checkbox" class="input-checkbox">Grey's Anatomy
+                    </label>
+                    <label>
+                        <input name="prefer" value="arrested-development" type="checkbox" class="input-checkbox">Arrested Development
+                    </label>
+                    <label>
+                        <input name="prefer" value="hannibal" type="checkbox" class="input-checkbox">Hannibal
+                    </label>
+                    <label>
+                        <input name="prefer" value="the-ranch" type="checkbox" class="input-checkbox">The Ranch
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Pick your favorite show and explain why?</p>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your explanation here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
